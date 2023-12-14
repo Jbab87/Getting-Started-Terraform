@@ -27,6 +27,7 @@ resource "aws_vpc" "app" {
 
 }
 
+
 resource "aws_internet_gateway" "app" {
   vpc_id = aws_vpc.app.id
 
@@ -93,3 +94,4 @@ EOF
 
 }
 
+ 
